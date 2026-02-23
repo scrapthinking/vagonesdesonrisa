@@ -1,0 +1,184 @@
+/* ===== VAGONES DE SONRISAS — DESIGN SYSTEM ===== */
+/* Brand: Orange (#FF6B35) + Warm White + Charcoal   */
+
+:root {
+  /* ── Base palette ── */
+  --color-white: #FFFFFF;
+  --color-off-white: #FFF8F5;
+  /* warm white with a hint of orange */
+  --color-cream: #FFF3EC;
+  /* section alternate bg */
+  --color-light-gray: #F0E8E3;
+  /* borders */
+  --color-gray: #BFB5AF;
+  /* muted text */
+  --color-dark-gray: #6B5E56;
+  /* secondary text */
+  --color-charcoal: #1C1410;
+  /* near-black with warmth */
+  --color-black: #0D0905;
+
+  /* ── Brand — Orange primary ── */
+  --color-primary: #FF6B35;
+  /* Vagones orange */
+  --color-primary-light: #FF8C5E;
+  --color-primary-dark: #E54E1B;
+  --color-primary-deeper: #B33C13;
+  /* for pressed states */
+
+  /* ── Accent — deep warm tones ── */
+  --color-accent: #FF6B35;
+  /* same as primary — orange IS the brand */
+  --color-accent-light: #FF9B70;
+  --color-accent-dark: #C94A18;
+  --color-accent-glow: rgba(255, 107, 53, 0.35);
+
+  /* ── Gold highlight ── */
+  --color-gold: #F5A623;
+  --color-gold-light: #FFD166;
+
+  /* ── Hero dark background — warm charcoal, NOT blue ── */
+  --color-hero-dark: #1A0E08;
+  --color-hero-mid: #2D1810;
+  --color-hero-light: #4A2818;
+
+  /* ── Ready theme (kept) ── */
+  --color-ready-bg: #0D0D0D;
+  --color-ready-neon: #39FF14;
+  --color-ready-orange: #FF6B00;
+  --color-ready-glow: rgba(57, 255, 20, 0.3);
+  --color-ready-orange-glow: rgba(255, 107, 0, 0.3);
+
+  /* ── Carmenciris theme (kept) ── */
+  --color-carmen-pink: #FF6B9D;
+  --color-carmen-sky: #87CEEB;
+  --color-carmen-yellow: #FFD700;
+  --color-carmen-lavender: #E6B8FF;
+  --color-carmen-mint: #98FB98;
+  --color-carmen-coral: #FF7F7F;
+  --color-carmen-gradient: linear-gradient(135deg, #FF6B9D, #FFD700, #87CEEB, #E6B8FF, #98FB98);
+
+  /* ── Elementos theme (kept) ── */
+  --color-elem-earth: #8B6914;
+  --color-elem-water: #006994;
+  --color-elem-fire: #FF4500;
+  --color-elem-air: #B0E0E6;
+  --color-elem-gradient: linear-gradient(135deg, #FF4500, #006994, #8B6914, #B0E0E6);
+
+  /* ── Gradients ── */
+  --gradient-primary: linear-gradient(135deg, #FF6B35, #E54E1B);
+  --gradient-accent: linear-gradient(135deg, #FF6B35, #F5A623);
+  --gradient-hero: linear-gradient(135deg, #1A0E08 0%, #2D1810 45%, #4A2818 100%);
+  --gradient-hero-radial: radial-gradient(ellipse at 60% 40%, rgba(255, 107, 53, 0.18) 0%, transparent 65%),
+    radial-gradient(ellipse at 20% 80%, rgba(245, 166, 35, 0.1) 0%, transparent 50%);
+  --gradient-orange-light: linear-gradient(135deg, #FFF3EC, #FFE0D0);
+  --gradient-dark: linear-gradient(135deg, #1A0E08, #2D1810);
+
+  /* ── Typography ── */
+  --font-display: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 2rem;
+  --fs-3xl: 2.5rem;
+  --fs-4xl: 3rem;
+  --fs-5xl: 3.5rem;
+  --fs-6xl: 4.5rem;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+  --fw-black: 900;
+
+  --lh-tight: 1.1;
+  --lh-snug: 1.25;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.75;
+
+  /* ── Spacing ── */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* ── Border radius ── */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-full: 9999px;
+
+  /* ── Shadows (warm-tinted) ── */
+  --shadow-sm: 0 1px 3px rgba(255, 107, 53, 0.06);
+  --shadow-md: 0 4px 14px rgba(255, 107, 53, 0.09);
+  --shadow-lg: 0 10px 30px rgba(255, 107, 53, 0.12);
+  --shadow-xl: 0 20px 50px rgba(0, 0, 0, 0.18);
+  --shadow-glow-primary: 0 0 40px rgba(255, 107, 53, 0.45);
+  --shadow-glow-accent: 0 0 30px rgba(255, 107, 53, 0.35);
+  --shadow-glow-gold: 0 0 30px rgba(245, 166, 35, 0.4);
+  --shadow-glow-neon: 0 0 30px rgba(57, 255, 20, 0.4);
+
+  /* ── Transitions ── */
+  --transition-fast: 150ms ease;
+  --transition-base: 300ms ease;
+  --transition-slow: 500ms ease;
+  --transition-spring: 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  /* ── Z-index ── */
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-float: 500;
+
+  /* ── Layout ── */
+  --container-max: 1200px;
+  --container-padding: var(--space-6);
+  --header-height: 70px;
+
+  /* ── Semantic tokens (light mode) ── */
+  --bg-body: var(--color-white);
+  --bg-section-alt: var(--color-off-white);
+  --bg-cream: var(--color-cream);
+  --text-primary: var(--color-charcoal);
+  --text-secondary: var(--color-dark-gray);
+  --text-muted: var(--color-gray);
+  --border-color: var(--color-light-gray);
+}
+
+/* ── Dark mode ── */
+[data-theme="dark"] {
+  --bg-body: #120A06;
+  --bg-section-alt: #1E1008;
+  --bg-cream: #1E1008;
+  --text-primary: #F5EDE8;
+  --text-secondary: #C4AFA8;
+  --text-muted: #7A6860;
+  --border-color: #3A2218;
+  --color-off-white: #1E1008;
+  --color-light-gray: #3A2218;
+  --color-cream: #1E1008;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.6);
+  --shadow-xl: 0 20px 50px rgba(0, 0, 0, 0.75);
+}

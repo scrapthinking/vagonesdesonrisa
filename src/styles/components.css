@@ -450,6 +450,24 @@
     color: var(--color-white);
 }
 
+/* Otros btn */
+.collection-btn--otros::before {
+    background: linear-gradient(135deg, #834d9b, #d04ed6, #f6a0ea);
+    background-size: 300% 300%;
+    animation: rainbowShift 5s ease infinite;
+}
+
+.collection-btn--otros:hover {
+    border-color: #d04ed6;
+    box-shadow: 0 0 20px rgba(208, 78, 214, 0.25), var(--shadow-lg);
+}
+
+.collection-btn--otros:hover .collection-btn__info h3,
+.collection-btn--otros:hover .collection-btn__info p,
+.collection-btn--otros:hover .collection-btn__arrow {
+    color: var(--color-white);
+}
+
 /* ===== INFLABLES MODAL ===== */
 .inflables-modal {
     position: fixed;
